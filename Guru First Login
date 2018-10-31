@@ -1,0 +1,11 @@
+describe("Guru Banking Application", ()=>{
+    it("should login to the site", ()=>{
+        browser.waitForAngularEnabled(false);
+        browser.get("http://demo.guru99.com/V4/");
+        browser.manage().window().maximize();
+        element(by.name("uid")).sendKeys("mngr156840");
+        element(by.name("password")).sendKeys("rEzybUn");
+        browser.sleep(1000);
+        element(by.name("btnLogin")).click();
+        browser.sleep(1000);
+    })
